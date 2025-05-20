@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web guesser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            text-align: center;
+            padding-top: 100px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: normal;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        button {
+            font-size: 1.2em;
+            padding: 12px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to the web guesser</h1>
+<h2>Think of a number between 0 and 1000, and I'll guess it in mo more than 10 tries</h2>
+<form method="POST">
+<input type="hidden" name="max_number" value="{{max_number}}">
+<input type="hidden" name="min_number" value="{{min_number}}">
+<button type="submit">Start</button>
+</form>
+</body>
+</html>

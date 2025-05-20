@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web guesser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            text-align: center;
+            padding-top: 100px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 1.1em;
+            padding: 12px 25px;
+            margin: 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0073a4;
+        }
+
+        button[value="correct"] {
+            background-color: #4CAF50;
+        }
+
+        button[value="correct"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<h1>{{message}}</h1>
+<form method="POST">
+  <input type="hidden" name="max_number" value="{{max_number}}">
+  <input type="hidden" name="min_number" value="{{min_number}}">
+  <button type="submit" name="answer" value="too small">Too small</button>
+  <button type="submit" name="answer" value="too big">Too big</button>
+  <button type="submit" name="answer" value="correct">Correct</button>
+</form>
+</body>
+</html>
