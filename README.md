@@ -23,7 +23,7 @@ Built with Flask, it runs in your browser and provides an interactive guessing e
 
 - Python 3
 - Flask
-- HTML (Jinja2 templates)
+- HTML
 
 ---
 
@@ -32,7 +32,7 @@ Built with Flask, it runs in your browser and provides an interactive guessing e
 ### 1. Install Flask (if you haven't):
 
 ```bash
-  pip install flask
+  pip install -r requirements.txt
 ```
 ### 2. Run the app
 ```bash
